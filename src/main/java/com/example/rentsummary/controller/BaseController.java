@@ -9,6 +9,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BaseController {
+
+
+
+
+
     int minbathrooms;
     int maxbathrooms;
     int minparkings;
