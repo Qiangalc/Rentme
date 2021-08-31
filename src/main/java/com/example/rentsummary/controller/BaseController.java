@@ -9,7 +9,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class BaseController {
-
+    int minbathrooms;
+    int maxbathrooms;
+    int minparkings;
+    int maxparkings;
+    int minlandsize;
+    int maxlandsize;
     /**
      * 响应返回结果
      *
@@ -160,22 +165,22 @@ public class BaseController {
         }
 
         //设置浴室
-//        RentRequestParaForAllhomes.FiltersBean.BathsBean bathsBean = new RentRequestParaForAllhomes.FiltersBean.BathsBean();
-//        para.getFilters().setBaths(bathsBean);
-//        para.getFilters().getBaths().setMin(minbathrooms);
-//        para.getFilters().getBaths().setMax(maxbathrooms);
+        RentRequestParaForAllhomes.FiltersBean.BathsBean bathsBean = new RentRequestParaForAllhomes.FiltersBean.BathsBean();
+        para.getFilters().setBaths(bathsBean);
+        para.getFilters().getBaths().setMin(minbathrooms);
+        para.getFilters().getBaths().setMax(maxbathrooms);
 
         //设置车位
-//        RentRequestParaForAllhomes.FiltersBean.ParkingBean parkingBean = new RentRequestParaForAllhomes.FiltersBean.ParkingBean();
-//        para.getFilters().setParking(parkingBean);
-//        para.getFilters().getParking().setMin(minparkings);
-//        para.getFilters().getParking().setMax(maxparkings);
+        RentRequestParaForAllhomes.FiltersBean.ParkingBean parkingBean = new RentRequestParaForAllhomes.FiltersBean.ParkingBean();
+        para.getFilters().setParking(parkingBean);
+        para.getFilters().getParking().setMin(minparkings);
+        para.getFilters().getParking().setMax(maxparkings);
 
         //设置区域大小
-//        RentRequestParaForAllhomes.FiltersBean.BlockSizeBean blockSizeBean = new RentRequestParaForAllhomes.FiltersBean.BlockSizeBean();
-//        para.getFilters().setBlockSize(blockSizeBean);
-//        para.getFilters().getBlockSize().setMin(minlandsize);
-//        para.getFilters().getBlockSize().setMax(maxlandsize);
+        RentRequestParaForAllhomes.FiltersBean.BlockSizeBean blockSizeBean = new RentRequestParaForAllhomes.FiltersBean.BlockSizeBean();
+        para.getFilters().setBlockSize(blockSizeBean);
+        para.getFilters().getBlockSize().setMin(minlandsize);
+        para.getFilters().getBlockSize().setMax(maxlandsize);
 
         //设置关键字
         para.getFilters().setKeywords(null);
@@ -546,4 +551,52 @@ public class BaseController {
 
     }
 
+    public int getMinbathrooms() {
+
+        return minbathrooms;
+    }
+
+    public void setMinbathrooms(int minbathrooms) {
+        this.minbathrooms = minbathrooms;
+    }
+
+    public int getMaxbathrooms() {
+        return maxbathrooms;
+    }
+
+    public void setMaxbathrooms(int maxbathrooms) {
+        this.maxbathrooms = maxbathrooms;
+    }
+
+    public int getMinparkings() {
+        return minparkings;
+    }
+
+    public void setMinparkings(int minparkings) {
+        this.minparkings = minparkings;
+    }
+
+    public int getMaxparkings() {
+        return maxparkings;
+    }
+
+    public void setMaxparkings(int maxparkings) {
+        this.maxparkings = maxparkings;
+    }
+
+    public int getMinlandsize() {
+        return minlandsize;
+    }
+
+    public void setMinlandsize(int minlandsize) {
+        this.minlandsize = minlandsize;
+    }
+
+    public int getMaxlandsize() {
+        return maxlandsize;
+    }
+
+    public void setMaxlandsize(int maxlandsize) {
+        this.maxlandsize = maxlandsize;
+    }
 }

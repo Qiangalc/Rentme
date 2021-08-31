@@ -6,6 +6,7 @@ public class Region {
     private int value;
     private String name;
     private String type;
+
     public void setPriority(int priority) {
         this.priority = priority;
     }
